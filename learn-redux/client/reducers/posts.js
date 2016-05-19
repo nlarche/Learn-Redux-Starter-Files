@@ -4,7 +4,7 @@ export default function reducer(state = [], action) {
         const i = action.index;
          return [
            ...state.slice(0, i), // before
-           { ...state[i], likes : state[i].likes +1 },  
+           { ...state[i], likes : state[i].likes + 1 },  
              ...state.slice(i + 1), //after          
          ] 
      default:
